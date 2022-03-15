@@ -1,0 +1,36 @@
+.task {
+  background: #f4f4f4;
+  margin: 15px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &-time {
+    user-select: none;
+    font-size: 13px;
+    margin-top: 7px;
+  }
+  &-title {
+    user-select: none;
+  }
+}
+
+.task.reminder {
+  border-left: 5px solid #52c41a;
+}
+
+.task h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task:hover {
+  background-color: #f0f0f0;
+}
+
+.icon-delete:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+  cursor: pointer;
+}

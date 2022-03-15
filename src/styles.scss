@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  min-width: 400px;
+  overflow: auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 10px;
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 8px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #8c8c8c;
+    cursor: pointer;
+  }
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  // margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  padding: 3px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #f2f4f5;
+  border-radius: 8px;
+  border: none;
+  &:focus {
+    outline: none;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+}
+
+// .form-control-check input {
+//   flex: 2;
+//   height: 15px;
+// }
